@@ -5,7 +5,7 @@
 const int sensorPin = A2;
 
 void setup() {
-	disabelBuiltinLed();
+	disableBuiltinLed();
 
 	Serial.begin(9600);
 

@@ -1,6 +1,6 @@
 #include <Arduino.h>
 
-void disabelBuiltinLed(void) {
+void disableBuiltinLed(void) {
 	pinMode(LED_BUILTIN, OUTPUT);
 	digitalWrite(LED_BUILTIN, LOW);
 }
