@@ -1,3 +1,3 @@
 # arpi
 
-The project for driving Raspberry Pi with a connected Arduino.
+The project for Arduino and Raspberry Pi interconnection and storing and showing data thru REST.
