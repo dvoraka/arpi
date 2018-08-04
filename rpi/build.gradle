@@ -1,14 +1,23 @@
+plugins {
+    id 'org.springframework.boot' version '2.0.3.RELEASE'
+}
+
 apply plugin: 'java'
+apply plugin: 'io.spring.dependency-management'
 
 sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
 version = '0.1-SNAPSHOT'
+
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
+    // Spring
+    compile('org.springframework.boot:spring-boot-starter-web')
+
     compile('org.rxtx:rxtx:2.1.7')
 }
 
@@ -16,4 +25,3 @@ task wrapper(type: Wrapper) {
     gradleVersion = '4.8'
     distributionType = Wrapper.DistributionType.ALL
 }
-
