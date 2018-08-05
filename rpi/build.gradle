@@ -12,13 +12,22 @@ version = '0.1-SNAPSHOT'
 
 repositories {
     mavenCentral()
+
+    maven { url file("libs") }
+
+//    maven {
+//        url "http://repo.opennms.org/maven2/"
+//    }
 }
 
 dependencies {
     // Spring
     compile('org.springframework.boot:spring-boot-starter-web')
 
-    compile('org.rxtx:rxtx:2.1.7')
+//    compile('org.rxtx:rxtx:2.1.7')
+//    compile group: 'org.rxtx', name: 'rxtx', version: '2.2pre2'
+
+    compile group: 'dvoraka.rxtx', name: 'rxtx-jar', version: '0.1'
 }
 
 task wrapper(type: Wrapper) {
